@@ -1,2 +1,2 @@
-# jooq-demonstration
-Demonstration project for jOOQ
+# Database Handler
+Demonstration project for Spring + jOOQ + PSQL
