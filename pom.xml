@@ -13,8 +13,8 @@
 	<groupId>com.example</groupId>
 	<artifactId>database_handler</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>database_handler</name>
-	<description>Demonstration project for Spring + jOOQ + PSQL</description>
+    <name>database_handler</name>
+    <description>Demonstration project for Spring + jOOQ + PSQL + Flyway</description>
 	<url/>
 
 	<licenses>
@@ -42,6 +42,7 @@
 
 	<properties>
 		<java.version>25</java.version>
+        <jooq.version>3.20.10</jooq.version>
 	</properties>
 
 	<dependencies>
@@ -55,6 +56,46 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+            <version>${jooq.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq-meta</artifactId>
+            <version>${jooq.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq-codegen</artifactId>
+            <version>${jooq.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jooq</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jooq-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 	</dependencies>
 
 	<build>

@@ -1,2 +1,2 @@
 # Database Handler
-Demonstration project for Spring + jOOQ + PSQL
+Demonstração de como utilizar Spring + jOOQ + PostgreSQL + Flyway.
